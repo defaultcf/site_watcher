@@ -1,4 +1,5 @@
 require "site_watcher/version"
+require "scrape"
 require "thor"
 
 module SiteWatcher
@@ -7,7 +8,9 @@ module SiteWatcher
   class CLI < Thor
     desc "add NAME URL CSSPATH", "Add monitored site"
     def add(name, url, csspath)
-      puts "Add #{name}"
+      scraping = Scraping.new
+      puts scraping.get_content(url, csspath)
+      scraping.driver.quit
     end
 
     desc "list", "List monitored sites"
