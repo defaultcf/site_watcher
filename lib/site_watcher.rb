@@ -5,8 +5,8 @@ module SiteWatcher
   class Error < StandardError; end
 
   class CLI < Thor
-    desc "add SITE_NAME", "Add monitored site"
-    def add(name)
+    desc "add NAME URL CSSPATH", "Add monitored site"
+    def add(name, url, csspath)
       puts "Add #{name}"
     end
 
@@ -20,7 +20,7 @@ module SiteWatcher
       puts "Check"
     end
 
-    desc "remove SITE_NAME", "Remove monitored site"
+    desc "remove NAME", "Remove monitored site"
     def remove(name)
       puts "Remove #{name}"
     end
