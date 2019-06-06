@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require "site_watcher"
+SiteWatcher::CLI.start
