@@ -1,5 +1,5 @@
 require "site_watcher/version"
-require "scrape"
+require "site_watcher/scrape"
 require "thor"
 
 module SiteWatcher
