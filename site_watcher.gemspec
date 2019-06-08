@@ -38,9 +38,11 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "thor", "~> 0.20"
   spec.add_runtime_dependency "selenium-webdriver", "~> 3.142"
+  spec.add_runtime_dependency "sqlite3", "~> 1.4"
 
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "byebug", "~> 11.0"
   spec.add_development_dependency "aruba", "~> 0.14"
 end
